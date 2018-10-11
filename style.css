@@ -1,0 +1,267 @@
+/* Selecting by html tag */
+
+html {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* nav */
+
+nav {
+  color: white;
+  background-color: #2c3e50;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+nav:hover, .link:hover {
+  color: #26c281;
+}
+
+.flex_name {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.link {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+#name_header {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+/* header */
+
+#name_main {
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 10px;
+}
+#profile_pic {
+  height: 300px;
+  width: 300px;
+  clip-path: circle(150px at center);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  background-color: #26c281;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+hr.short_white {
+  color: #ffffff;
+  background: #ffffff;
+  height: 2px;
+  width: 30%;
+}
+
+/* experiences */
+
+.section_experience {
+  text-align: center;
+  color: #2c3e50;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 2.3rem;
+}
+
+hr.short_blue {
+  color: #2c3e50;
+  background: #2c3e50;
+  height: 3px;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+img.job_icon {
+  height: 250px;
+  width: 250px;
+  clip-path: circle(110px at center);
+}
+
+section.jobs {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.job1, .job2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rbc, .borealis, .wirkn, .entrepreneur {
+    background-color: #2c3e50;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all, ease, 0.5s;
+}
+
+.rbc:hover, .borealis:hover, .wirkn:hover, .entrepreneur:hover {
+  background-color: #26c281;
+}
+
+/* about */
+
+#about {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #26c281;
+  display: flex;
+  flex-direction: column;
+}
+
+hr.long_white {
+  color: #ffffff;
+  background: #ffffff;
+  height: 2px;
+  width: 30%;
+}
+
+.section_about {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p.about, p.about1 {
+  color: white;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#about p > a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+#about p > a:hover {
+  text-decoration: underline;
+}
+
+.about_flex {
+  text-align: center;
+  display: flex;
+}
+
+button {
+  background-color: #26c281;
+  color: #2c3e50;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  border-color: #ffffff;
+  border-width: 2px;
+  align-self: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+button:hover {
+  background-color: white;
+}
+
+/* contact */
+
+#contact {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+a.green {
+  color: #26c281;
+  text-decoration: none;
+}
+
+a.green:hover {
+  text-decoration: underline;
+}
+
+.section_contact {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.p_contact {
+  font-size: 1.3rem;
+  margin-top: 0px;
+}
+
+.social_icons {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.fab {
+  color: white;
+  margin, padding: 0px;
+}
+
+.fab:hover {
+  color: #26c281;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    padding-top: 2px;
+    margin: 0;
+  }
+
+  .flex_name {
+    display: block;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  section.jobs {
+    display: block;
+  }
+
+  .about_flex {
+    display: block;
+  }
+
+}
